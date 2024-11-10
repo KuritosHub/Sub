@@ -1,4 +1,4 @@
-local gui = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/KuritosHub/Subs/main/RG/GUI.lua"))():AddWindow("Ro-Ghoul", {
+local gui = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/KuritosHub/Sub/refs/heads/main/RG/gui.lua"))():AddWindow("Ro-Ghoul", {
     main_color = Color3.fromRGB(0,0,0),
     min_size = Vector2.new(373, 340),
     can_resize = false
@@ -20,7 +20,7 @@ repeat wait() until player:FindFirstChild("PlayerFolder")
 local team, remotes, stat = player.PlayerFolder.Customization.Team.Value, get.ReplicatedStorage.Remotes, player.PlayerFolder.StatsFunction
 local oldtick, farmtick = 0, 0
 local camera = workspace.CurrentCamera
-local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/KuritosHub/Sub/main/RG/Settings.lua"))()("Ro-Ghoul Autofarm", {
+local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/KuritosHub/Sub/refs/heads/main/RG/settings.lua"))()("Ro-Ghoul Autofarm", {
     Skills = {
         E = false,
         F = false,
